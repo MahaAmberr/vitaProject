@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognition Security Manager</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #545454;
+      padding: 20px;
+    }
+
+    .login-container {
+      background: #111; /* Slightly lighter black */
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+      width: 100%;
+      max-width: 380px; /* A bit bigger */
+      text-align: center;
+    }
+
+    .logo-container {
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-container img {
+      max-width: 140px;
+      height: auto;
+    }
+
+    .login-header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #545454;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+      color: #545454;
+      font-size: 0.95rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #545454;
+      border-radius: 6px;
+      outline: none;
+      font-size: 1rem;
+      color: #545454;
+    }
+
+    input:focus {
+      border-color: #545454;
+      box-shadow: 0 0 4px rgba(84,84,84,0.4);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 6px;
+      background: #050776;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 0.5rem;
+    }
+
+    .submit-btn:hover {
+      background: #1f0778;
+    }
+
+    .forgot-password {
+      text-align: right;
+      margin: 0.6rem 0 1rem;
+    }
+
+    .forgot-password a {
+      color: #545454;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      border-radius: 6px;
+      display: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .banner.success {
+      background: #28a745;
+      color: #fff;
+    }
+
+    .banner.error {
+      background: #dc3545;
+      color: #fff;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #545454;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 1.6rem;
+        max-width: 90%;
+      }
+
+      .logo-container img {
+        max-width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo-container">
+      <img src="https://vita.spsnet.com/csm/includes/csm_ng/images/logo.png" alt="VITA Logo">
+    </div>
+    
+    <div id="banner" class="banner"></div>
+    
+    <div class="login-header">
+      <h1>Login</h1>
+    </div>
+    
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+      
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+      
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+    
+    <div class="footer">
+      <p>© 2023 CSM User Generation. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const banner = document.getElementById("banner");
+
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (username === "maha" && password === "1234567") {
+        banner.textContent = "✅ Successfully logged in. Redirecting...";
+        banner.className = "banner success";
+        banner.style.display = "block";
+
+        setTimeout(() => {
+          window.location.href = "index.html"; 
+        }, 2000);
+      } else {
+        banner.textContent = "❌ Invalid username or password";
+        banner.className = "banner error";
+        banner.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

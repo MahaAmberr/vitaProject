@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-Vita</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top sps-navbar shadow-sm">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+   
+      <span class="fw-bold"><img src="https://vita.spsnet.com/assets/images/logo-white.png" alt="SPS Logo" height="40" class="me-2"></span>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+        <!-- Dropdowns -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+            compliance 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="ISP.html">Information security and policy </a></li>
+            <li><a class="dropdown-item" href="roles.html">Roles & Responsibility</a></li>
+            <li><a class="dropdown-item" href="BI.html">Buisness impact</a></li>
+            <li><a class="dropdown-item" href="ITsys.html">IT system and data sensitivity</a></li>
+            <li><a class="dropdown-item" href="audits.html">IT security and audits</a></li>
+            <li><a class="dropdown-item" href="Risk.html">Risk Assesment</a></li>
+          </ul
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pricingDropdown" role="button" data-bs-toggle="dropdown">
+            Pricing
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+            <li><a class="dropdown-item" href="custom.html">Standard</a></li>
+            <li><a class="dropdown-item" href="premium.html">Premium</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">Contact Us</a></li>
+        
+          </ul>
+        </li>
+
+        <!-- Login Button -->
+        <li class="nav-item ms-3">
+          <a class="btn btn-outline-light login-btn" href="login.html">Login to CSM</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="nepra-compliance-section"> 
+  <div class="content-left">
+    <h1>Virtual Information Security Officer (viSO) Services for VITA Security Compliance</h1>
+  
+    <p class="description">
+      Our viSos provide expert, hands-on cybersecurity leadership to help your organization achieve and maintain compliance with VITA, COV, and other regulatory standards. Acting as an integrated member of your team, our viSos guide staff, manage security documentation, lead risk assessments, and support day-to-day security operations—ensuring your systems are protected, your controls are audit-ready, and your security program is both effective and sustainable.
+    </p>
+  </div>
+
+  <div class="plans-right">
+    <h2>Choose a Plan</h2>
+    <div class="plan-cards-container">
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <p class="price">$1k/month</p>
+        <a href="basic.html" class="btn">Get Started</a>
+      </div>
+      <div class="plan-card">
+        <h3>Standard</h3>
+        <p class="price">$3k/month</p>
+        <a href="custom.html" class="btn">Get Started</a>
+      </div>
+      <div class="plan-card">
+        <h3>Premium</h3>
+        <p class="price">Custom</p>
+        <a href="premium.html" class="btn">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-content">
+    SPS is showcasing VITA SEC-530 Compliance Services at COVITS 2025 — Stay tuned for more updates!
+  </div>
+</div>
+
+ <div class="container">
+    <!-- Left Sidebar Accordion -->
+    <div class="sidebar">
+      <button class="accordion" data-section="policy">Information Security Policy</button>
+      <button class="accordion" data-section="roles">Roles and Responsibilities</button>
+      <button class="accordion" data-section="bia">Business Impact Analysis</button>
+      <button class="accordion" data-section="classification">IT System and Data Sensitivity Classification</button>
+      <button class="accordion" data-section="inventory">Sensitive IT System Inventory and Definition</button>
+      <button class="accordion" data-section="risk">Risk Assessment</button>
+      <button class="accordion" data-section="audits">IT Security Audits</button>
+      <button class="accordion" data-section="controls">Security Controls Catalog</button>
+    </div>
+
+    <!-- Right Content Display -->
+    <div class="content-box" id="content">
+      <h2>Information Security Policy</h2>
+      <p>
+        Our Information Security Policy establishes a comprehensive framework for protecting the confidentiality, integrity, and availability of data, systems, and networks across the organization. It sets clear security objectives, compliance requirements, and operational practices designed to safeguard organizational information from internal and external threats, while ensuring regulatory and contractual obligations are met. The policy emphasizes the protection of sensitive information, including personally identifiable information (PII), financial records, intellectual property, and other critical business data, against unauthorized access, disclosure, modification, or destruction.
+        <a href="ISP.html">Learn More ›</a>
+      </p>
+    </div>
+  </div>
+
+  
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Left side -->
+    <div class="footer-left">
+      <img src="https://vita.spsnet.com/assets/images/logo-white.png" alt="SPS Logo" class="footer-logo">
+      <div>
+        <h3>Software Productivity Strategists, Inc.</h3>
+        <p>
+          Software Productivity Strategists, Inc. (SPS) delivers AI and Cloud-powered
+          industry solutions. With expertise across design, development, security,
+          and operations, we build scalable, secure, and reliable systems. Our
+          award-winning team includes IBM-certified inventors and global
+          competition champions.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right side -->
+    <div class="footer-right">
+      <h3>Compliance</h3>
+      <ul>
+        <li><a href="#">Information Security Policy</a></li>
+        <li><a href="#">Roles and Responsibilities</a></li>
+        <li><a href="#">Business Impact Analysis</a></li>
+        <li><a href="#">IT System and Data Sensitivity Classification</a></li>
+        <li><a href="#">Sensitive IT System Inventory and Definition</a></li>
+        <li><a href="#">Risk Assessment</a></li>
+        <li><a href="#">IT Security Audits</a></li>
+        <li><a href="#">Security Controls Catalog</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2024 <strong>Software Productivity Strategists, Inc.</strong> All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn">↑</button>
+<script src="scrpt.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
